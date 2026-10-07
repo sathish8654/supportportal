@@ -1,0 +1,1174 @@
+/* Import Google Fonts Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif !important;
+    background-color: #f8fafc !important;
+}
+
+/* Bootstrap-like styling for Select2 */
+.select2-container .select2-selection--single {
+    border-radius: 0.375rem;
+    border: 1px solid #ced4da;
+    padding: 0.25rem 0.75rem;
+    font-size: 1rem !important;
+    height: 38px;
+    border-color: #a3d1f7;
+}
+
+/* Fix Widespread container-flux Typo in CSS & Apply Premium Page Layout */
+.container-flux {
+    width: 100% !important;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto !important;
+    margin-left: auto !important;
+    max-width: 100% !important;
+    margin-top: 0.5rem !important;
+    margin-bottom: 2rem !important;
+}
+
+/* Premium Card and Layout for Listing Pages */
+.container-flux .card {
+    border-radius: 16px !important;
+    border: 1px solid rgba(226, 232, 240, 0.8) !important;
+    box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.08), 0 2px 8px -1px rgba(15, 23, 42, 0.04) !important;
+    overflow: hidden !important;
+    background-color: #ffffff !important;
+}
+
+.container-flux .card-header {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%) !important;
+    color: #ffffff !important;
+    font-size: 1.15rem !important;
+    font-weight: 600 !important;
+    padding: 1.25rem 1.75rem !important;
+    border-bottom: none !important;
+    letter-spacing: 0.025em !important;
+}
+
+.container-flux .card-body {
+    padding: 1.75rem 2rem !important;
+}
+
+/* Global Premium Card Style (Applies to all Cards on Dashboard & Auth pages) */
+.card, .card-premium {
+    background: #ffffff !important;
+    border: 1px solid rgba(226, 232, 240, 0.8) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.04), 0 8px 10px -6px rgba(0, 0, 0, 0.02) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.card:hover, .card-premium:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.06), 0 10px 10px -5px rgba(0, 0, 0, 0.03) !important;
+}
+
+.card .card-header, .card-premium .card-header {
+    background: transparent !important;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.8) !important;
+    font-weight: 600 !important;
+    font-size: 1.05rem !important;
+    color: #0f172a !important;
+    padding: 1.15rem 1.5rem !important;
+}
+
+.card .card-body {
+    padding: 1.5rem !important;
+}
+
+.card-premium .card-body {
+    padding: 1.25rem 1.5rem !important;
+}
+
+@media (min-width: 768px) {
+    .card-premium .card-body {
+        padding: 2rem 2.25rem !important;
+    }
+}
+
+/* Global Premium Form Inputs (Applies to all form-control and form-select tags) */
+.form-control, .form-select, select.form-control, .form-control-premium {
+    border-radius: 8px !important;
+    border: 1px solid #cbd5e1 !important;
+    padding: 0.5rem 0.88rem !important;
+    font-size: 0.9rem !important;
+    color: #334155 !important;
+    background-color: #ffffff !important;
+    transition: all 0.2s ease !important;
+}
+
+.form-control:focus, .form-select:focus, select.form-control:focus, .form-control-premium:focus {
+    border-color: #6366f1 !important;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1) !important;
+    outline: none !important;
+    background-color: #ffffff !important;
+}
+
+/* Custom Dropdown Arrow for all selects globally */
+select, 
+select.form-control, 
+.form-select, 
+.custom-select {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23334155' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 0.88rem center !important;
+    background-size: 14px 10px !important;
+    padding-right: 2.5rem !important;
+}
+
+.form-control:disabled, .form-control[readonly], select.form-control:disabled {
+    background-color: #f1f5f9 !important;
+    color: #64748b !important;
+    border-color: #e2e8f0 !important;
+    opacity: 0.8;
+}
+
+/* Premium Form Label */
+label, .label-premium {
+    font-weight: 550 !important;
+    color: #475569 !important;
+    font-size: 0.85rem !important;
+    margin-bottom: 0.4rem !important;
+}
+
+/* Premium Buttons Rework (Pill Style, Sleek Obsidian Theme) */
+.btn-premium {
+    background: #0f172a !important; /* Obsidian Slate */
+    color: #ffffff !important;
+    border: 1px solid #1e293b !important;
+    border-radius: 50px !important; /* Pill style */
+    padding: 0.75rem 2rem !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    letter-spacing: 0.5px !important;
+    text-transform: uppercase !important;
+    box-shadow: 0 4px 10px rgba(15, 23, 42, 0.1) !important;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none !important;
+}
+
+.btn-premium:hover {
+    background: #1e293b !important;
+    transform: translateY(-1.5px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.2) !important;
+    border-color: #334155 !important;
+    color: #ffffff !important;
+}
+
+.btn-premium:active {
+    transform: translateY(1px) scale(0.98);
+}
+
+.btn-outline-premium {
+    background: transparent !important;
+    color: #0f172a !important;
+    border: 1.5px solid #0f172a !important;
+    border-radius: 50px !important; /* Pill style */
+    padding: 0.75rem 2rem !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    letter-spacing: 0.5px !important;
+    text-transform: uppercase !important;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none !important;
+}
+
+.btn-outline-premium:hover {
+    background: rgba(15, 23, 42, 0.04) !important;
+    color: #1e293b !important;
+    border-color: #1e293b !important;
+    transform: translateY(-1.5px);
+}
+
+/* Global Button Refinement (Makes standard BS buttons look premium and cohesive) */
+.btn {
+    border-radius: 8px !important;
+    font-weight: 550 !important;
+    padding: 0.45rem 1.15rem !important;
+    font-size: 0.88rem !important;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.btn-sm {
+    padding: 0.3rem 0.8rem !important;
+    font-size: 0.8rem !important;
+    border-radius: 6px !important;
+}
+
+.btn-primary {
+    background: #4f46e5 !important;
+    border-color: #4f46e5 !important;
+    color: #ffffff !important;
+}
+
+.btn-primary:hover {
+    background: #4338ca !important;
+    border-color: #4338ca !important;
+    transform: translateY(-1px);
+}
+
+.btn-success {
+    background: #10b981 !important;
+    border-color: #10b981 !important;
+    color: #ffffff !important;
+}
+
+.btn-success:hover {
+    background: #059669 !important;
+    border-color: #059669 !important;
+    transform: translateY(-1px);
+}
+
+.btn-danger {
+    background: #ef4444 !important;
+    border-color: #ef4444 !important;
+    color: #ffffff !important;
+}
+
+.btn-danger:hover {
+    background: #dc2626 !important;
+    border-color: #dc2626 !important;
+    transform: translateY(-1px);
+}
+
+.btn-secondary, .btn-default {
+    background: #f1f5f9 !important;
+    border-color: #e2e8f0 !important;
+    color: #475569 !important;
+}
+
+.btn-secondary:hover, .btn-default:hover {
+    background: #e2e8f0 !important;
+    color: #1e293b !important;
+}
+
+/* Social & Alternative Auth Buttons Rework (Pill Styles) */
+.btn-social-google {
+    background: #ffffff !important;
+    color: #334155 !important;
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 50px !important;
+    padding: 0.7rem 1.5rem !important;
+    font-weight: 600 !important;
+    font-size: 0.88rem !important;
+    transition: all 0.2s ease !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03) !important;
+}
+
+.btn-social-google:hover {
+    background: #f8fafc !important;
+    border-color: #cbd5e1 !important;
+    transform: translateY(-1.5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06) !important;
+    color: #0f172a !important;
+}
+
+.btn-social-otp-email {
+    background: #f0fdfa !important;
+    color: #0d9488 !important;
+    border: 1px solid #ccfbf1 !important;
+    border-radius: 50px !important;
+    padding: 0.7rem 1.5rem !important;
+    font-weight: 600 !important;
+    font-size: 0.88rem !important;
+    transition: all 0.2s ease !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none !important;
+    box-shadow: 0 2px 6px rgba(13, 148, 136, 0.03) !important;
+}
+
+.btn-social-otp-email:hover {
+    background: #ccfbf1 !important;
+    border-color: #99f6e4 !important;
+    transform: translateY(-1.5px);
+    color: #0f766e !important;
+}
+
+.btn-social-otp-mobile {
+    background: #f0fdf4 !important;
+    color: #16a34a !important;
+    border: 1px solid #dcfce7 !important;
+    border-radius: 50px !important;
+    padding: 0.7rem 1.5rem !important;
+    font-weight: 600 !important;
+    font-size: 0.88rem !important;
+    transition: all 0.2s ease !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none !important;
+    box-shadow: 0 2px 6px rgba(22, 163, 74, 0.03) !important;
+}
+
+.btn-social-otp-mobile:hover {
+    background: #dcfce7 !important;
+    border-color: #bbf7d0 !important;
+    transform: translateY(-1.5px);
+    color: #15803d !important;
+}
+
+/* Link buttons */
+.btn-link-premium {
+    color: #4f46e5 !important;
+    text-decoration: none !important;
+    font-weight: 500 !important;
+    font-size: 0.9rem !important;
+    transition: color 0.15s ease !important;
+}
+
+.btn-link-premium:hover {
+    color: #4338ca !important;
+    text-decoration: underline !important;
+}
+
+/* Global Premium Modal Design */
+.modal-content {
+    border-radius: 16px !important;
+    border: none !important;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+    background: #ffffff !important;
+    overflow: hidden;
+}
+
+.modal-header {
+    border-bottom: 1px solid rgba(226, 232, 240, 0.8) !important;
+    padding: 1.25rem 1.5rem !important;
+    background: #f8fafc !important;
+    position: relative !important;
+}
+
+.modal-header .modal-title {
+    font-weight: 600 !important;
+    color: #0f172a !important;
+    font-size: 1.15rem;
+}
+
+.modal-header .close, .modal-header .btn-close {
+    position: absolute !important;
+    right: 1.5rem !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    background: transparent !important;
+    border: none !important;
+    font-size: 1.5rem !important;
+    color: #64748b !important;
+    cursor: pointer !important;
+    opacity: 0.7 !important;
+    transition: color 0.15s ease, opacity 0.15s ease !important;
+    padding: 0.25rem !important;
+    line-height: 1 !important;
+    margin: 0 !important;
+}
+
+.modal-header .close:hover, .modal-header .btn-close:hover {
+    color: #0f172a !important;
+    opacity: 1 !important;
+}
+
+.modal-body {
+    padding: 1.75rem !important;
+}
+
+.modal-body .row {
+    row-gap: 1.25rem !important; /* Automatic vertical spacing for wrapped columns */
+}
+
+.modal-body .border.bg-light {
+    background-color: #f8fafc !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    padding: 1.25rem !important;
+}
+
+.modal-footer {
+    border-top: 1px solid rgba(226, 232, 240, 0.8) !important;
+    padding: 1rem 1.5rem !important;
+    background: #f8fafc !important;
+}
+
+/* Global Premium Table Design (Specifically for DataTables) */
+table.dataTable, table.table {
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    border: 1px solid rgba(226, 232, 240, 0.8) !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02) !important;
+}
+
+table.dataTable thead th, table.table thead th {
+    background-color: #f8fafc !important;
+    color: #475569 !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    font-size: 0.78rem !important;
+    letter-spacing: 0.5px !important;
+    padding: 12px 16px !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+}
+
+table.dataTable tbody td, table.table tbody td {
+    padding: 12px 16px !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+    font-size: 0.88rem !important;
+    color: #334155 !important;
+    vertical-align: middle !important;
+}
+
+table.table tbody tr:hover {
+    background-color: #f8fafc !important;
+}
+
+/* DataTables pagination & search controls refinement */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    border-radius: 30px !important;
+    border: 1px solid #cbd5e1 !important;
+    margin: 0 2px !important;
+    padding: 0.4rem 0.8rem !important;
+    font-size: 0.85rem !important;
+    font-weight: 500 !important;
+    transition: all 0.2s ease !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, 
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background: #0f172a !important;
+    color: #ffffff !important;
+    border-color: #0f172a !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: #f1f5f9 !important;
+    color: #0f172a !important;
+    border-color: #cbd5e1 !important;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    border-radius: 30px !important;
+    border: 1px solid #cbd5e1 !important;
+    padding: 0.4rem 2rem 0.4rem 1rem !important; /* 2rem right padding to avoid overlap with clear x */
+    font-size: 0.88rem !important;
+    transition: all 0.2s ease !important;
+}
+
+.dataTables_wrapper .dataTables_filter input:focus {
+    border-color: #6366f1 !important;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1) !important;
+    outline: none !important;
+}
+
+/* Premium Search Page Input Group (Similar to DataTable search input) */
+.search-premium-group {
+    background-color: #ffffff !important;
+    border-radius: 30px !important;
+    border: 1px solid #cbd5e1 !important;
+    padding: 4px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03) !important;
+    transition: all 0.2s ease !important;
+    width: auto !important;
+}
+
+.search-premium-group:focus-within {
+    border-color: #6366f1 !important;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
+}
+
+.search-premium-group .form-control,
+.search-premium-group .form-select,
+.search-premium-group .custom-select,
+.search-premium-group select {
+    border: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    height: 38px !important;
+}
+
+.search-premium-group #filterMenu {
+    border-right: 1px solid #cbd5e1 !important;
+    width: 140px !important;
+    padding-left: 1rem !important;
+    padding-right: 2rem !important;
+    font-weight: 500;
+}
+
+.search-premium-group #serialDiv {
+    margin: 0 !important;
+}
+
+.search-premium-group #serialDiv input {
+    padding-left: 1rem !important;
+    border-radius: 0 !important;
+    width: 100% !important;
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.search-premium-group #serialDiv input:focus {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.search-premium-group #addressDiv {
+    margin: 0 !important;
+}
+
+.search-premium-group #addressDiv select {
+    border: none !important;
+}
+
+.search-premium-group #addressDiv .select2-container .select2-selection--single,
+.search-premium-group #addressDiv .select2-container--default .select2-selection--single {
+    border: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    height: 38px !important;
+    padding-top: 5px !important;
+}
+
+.search-premium-group .input-group-append {
+    display: flex;
+    align-items: center;
+}
+
+.search-premium-group .btn {
+    border-radius: 30px !important;
+    height: 38px !important;
+    border: none !important;
+    padding: 0 1.25rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-weight: 600 !important;
+}
+
+.search-premium-group .btn-outline-primary {
+    background-color: #4f46e5 !important;
+    color: #ffffff !important;
+}
+
+.search-premium-group .btn-outline-primary:hover {
+    background-color: #4338ca !important;
+    color: #ffffff !important;
+}
+
+.search-premium-group .btn-outline-danger {
+    background-color: #f1f5f9 !important;
+    color: #ef4444 !important;
+    margin-left: 4px !important;
+}
+
+.search-premium-group .btn-outline-danger:hover {
+    background-color: #fee2e2 !important;
+    color: #ef4444 !important;
+}
+
+/* Custom Table Search Input Styling (matches DataTables search style) */
+.table-search-input {
+    border-radius: 30px !important;
+    border: 1px solid #cbd5e1 !important;
+    padding: 0.35rem 1rem !important;
+    font-size: 0.8rem !important;
+    font-weight: normal !important;
+    color: #334155 !important;
+    background-color: #ffffff !important;
+    transition: all 0.2s ease !important;
+    outline: none !important;
+    width: 180px !important;
+}
+
+.table-search-input:focus {
+    border-color: #6366f1 !important;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1) !important;
+}
+
+/* Custom search clear button styling */
+.search-clear-btn {
+    position: absolute !important;
+    right: 8px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    background: transparent !important;
+    border: none !important;
+    font-size: 1.15rem !important;
+    color: #94a3b8 !important;
+    cursor: pointer !important;
+    opacity: 0.7 !important;
+    transition: color 0.15s ease, opacity 0.15s ease !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: 1 !important;
+    display: none; /* toggled via JS */
+    align-items: center !important;
+    justify-content: center !important;
+    width: 20px !important;
+    height: 20px !important;
+    outline: none !important;
+}
+
+.search-clear-btn:hover {
+    color: #475569 !important;
+    opacity: 1 !important;
+}
+
+/* DataTable search clear button styling */
+.dataTables_filter .position-absolute {
+    right: 8px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    background: transparent !important;
+    border: none !important;
+    font-size: 1.15rem !important;
+    color: #94a3b8 !important;
+    cursor: pointer !important;
+    opacity: 0.7 !important;
+    transition: color 0.15s ease, opacity 0.15s ease !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: 1 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.dataTables_filter .position-absolute:hover {
+    color: #475569 !important;
+    opacity: 1 !important;
+}
+
+/* Premium Alerts */
+.alert-premium {
+    border-radius: 12px !important;
+    border: none !important;
+    border-left: 4px solid !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.02) !important;
+    padding: 0.85rem 1.25rem !important;
+    font-weight: 500 !important;
+    font-size: 0.92rem !important;
+    margin-bottom: 1.25rem !important;
+}
+
+.alert-premium.alert-danger {
+    background-color: #fef2f2 !important;
+    border-left-color: #ef4444 !important;
+    color: #991b1b !important;
+}
+
+.alert-premium.alert-success {
+    background-color: #f0fdf4 !important;
+    border-left-color: #22c55e !important;
+    color: #166534 !important;
+}
+
+.alert-premium.alert-warning {
+    background-color: #fffbeb !important;
+    border-left-color: #f59e0b !important;
+    color: #92400e !important;
+}
+
+.alert-premium.alert-info {
+    background-color: #f0f9ff !important;
+    border-left-color: #0ea5e9 !important;
+    color: #075985 !important;
+}
+
+/* Zoom Hover Transition */
+.transition-hover {
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.transition-hover:hover {
+    transform: translateY(-2px) !important;
+}
+
+/* Premium Navbar Dropdowns */
+.navbar-nav .dropdown-menu {
+    border-radius: 12px !important;
+    border: 1px solid rgba(226, 232, 240, 0.8) !important;
+    box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.1), 0 4px 12px -3px rgba(15, 23, 42, 0.05) !important;
+    padding: 0.5rem 0 !important;
+    min-width: 200px !important;
+    overflow: hidden !important;
+    animation: fadeInDropdown 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+@keyframes fadeInDropdown {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+    font-size: 0.925rem !important;
+    font-weight: 500 !important;
+    color: #475569 !important;
+    padding: 0.65rem 1.25rem !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: #f1f5f9 !important;
+    color: #0f172a !important;
+    padding-left: 1.5rem !important; /* Elegant slide micro-animation */
+}
+
+.navbar-nav .dropdown-menu .dropdown-item i {
+    margin-right: 8px !important;
+    color: #94a3b8 !important;
+    transition: color 0.2s ease !important;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover i {
+    color: #4f46e5 !important; /* Highlight icon on hover */
+}
+
+/* Premium DataTables Export Buttons */
+.dt-buttons {
+    display: inline-flex !important;
+    gap: 0.5rem !important;
+    margin-bottom: 1.25rem !important;
+}
+
+.dt-button {
+    background: #ffffff !important;
+    border: 1.5px solid #e2e8f0 !important;
+    color: #475569 !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    padding: 0.5rem 1rem !important;
+    border-radius: 50px !important; /* Rounded pill shapes */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+.dt-button:hover {
+    background-color: #f8fafc !important;
+    border-color: #cbd5e1 !important;
+    color: #0f172a !important;
+    transform: translateY(-1px) !important;
+}
+
+.dt-button:active, .dt-button.active {
+    background-color: #f1f5f9 !important;
+    border-color: #94a3b8 !important;
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Color specific icons/borders for each export button type */
+.dt-button.buttons-copy:hover {
+    border-color: #6366f1 !important;
+    color: #6366f1 !important;
+}
+.dt-button.buttons-csv:hover {
+    border-color: #f59e0b !important;
+    color: #f59e0b !important;
+}
+.dt-button.buttons-excel:hover {
+    border-color: #10b981 !important;
+    color: #10b981 !important;
+}
+.dt-button.buttons-pdf:hover {
+    border-color: #ef4444 !important;
+    color: #ef4444 !important;
+}
+.dt-button.buttons-print:hover {
+    border-color: #3b82f6 !important;
+    color: #3b82f6 !important;
+}
+
+/* Premium DataTables Pagination */
+.dataTables_wrapper .dataTables_paginate {
+    display: flex !important;
+    gap: 2px !important;
+    align-items: center !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    color: #475569 !important;
+    padding: 0.4rem 0.8rem !important;
+    margin: 0 !important;
+    border-radius: 8px !important;
+    font-size: 0.85rem !important;
+    font-weight: 500 !important;
+    transition: all 0.2s ease !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: #f1f5f9 !important;
+    color: #0f172a !important;
+    border-color: #cbd5e1 !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, 
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background: #0f172a !important;
+    color: #ffffff !important;
+    border-color: #0f172a !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, 
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover {
+    background: #f8fafc !important;
+    color: #94a3b8 !important;
+    border-color: #e2e8f0 !important;
+    cursor: default !important;
+}
+
+/* Bootstrap 5 compatibility fallback for legacy badge classes */
+.badge.badge-primary {
+    background-color: #6366f1 !important;
+    color: #ffffff !important;
+}
+.badge.badge-success {
+    background-color: #10b981 !important;
+    color: #ffffff !important;
+}
+.badge.badge-info {
+    background-color: #0ea5e9 !important;
+    color: #ffffff !important;
+}
+.badge.badge-warning {
+    background-color: #f59e0b !important;
+    color: #1e293b !important;
+}
+.badge.badge-danger {
+    background-color: #ef4444 !important;
+    color: #ffffff !important;
+}
+.badge.badge-secondary {
+    background-color: #64748b !important;
+    color: #ffffff !important;
+}
+
+/* Global premium overrides for DataTable action/edit/delete buttons */
+table.dataTable td button.fa, 
+table.dataTable td button[class*="fa-"],
+.datatable td button.fa, 
+.datatable td button[class*="fa-"],
+table.dataTable td button.deleteVendorAdd,
+.datatable td button.deleteVendorAdd {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 32px !important;
+    height: 32px !important;
+    padding: 0 !important;
+    font-size: 0.875rem !important; /* Reset raw 24px */
+    border-radius: 6px !important; /* Neat slightly rounded square */
+    background: transparent !important;
+    border: 1px solid #e2e8f0 !important;
+    transition: all 0.2s ease-in-out !important;
+    margin: 0 2px !important;
+    cursor: pointer !important;
+}
+
+/* Hover scales and lifts */
+table.dataTable td button.fa:hover, 
+table.dataTable td button[class*="fa-"]:hover,
+.datatable td button.fa:hover, 
+.datatable td button[class*="fa-"]:hover,
+table.dataTable td button.deleteVendorAdd:hover,
+.datatable td button.deleteVendorAdd:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Edit / Add / Enable buttons (normally green) */
+table.dataTable td button.fa.updateUser,
+table.dataTable td button.fa.updatePayment,
+table.dataTable td button.fa.updateProduct,
+table.dataTable td button.fa.getAddress,
+table.dataTable td button.fa.getPartInfo,
+table.dataTable td button.fa.getPartSubInfo,
+table.dataTable td button.fa.addSubCat1Modal,
+table.dataTable td button.fa.updateSubCat1Modal,
+table.dataTable td button.fa.fa-edit,
+table.dataTable td button.fa.fa-plus-circle,
+.datatable td button.fa.updateUser,
+.datatable td button.fa.updatePayment,
+.datatable td button.fa.updateProduct,
+.datatable td button.fa.getAddress,
+.datatable td button.fa.getPartInfo,
+.datatable td button.fa.getPartSubInfo,
+.datatable td button.fa.addSubCat1Modal,
+.datatable td button.fa.updateSubCat1Modal,
+.datatable td button.fa.fa-edit,
+.datatable td button.fa.fa-plus-circle {
+    color: #f59e0b !important; /* Premium Amber/Orange instead of harsh green */
+    border-color: #fef3c7 !important;
+    background-color: #fffbeb !important;
+}
+
+table.dataTable td button.fa.updateUser:hover,
+table.dataTable td button.fa.updatePayment:hover,
+table.dataTable td button.fa.updateProduct:hover,
+table.dataTable td button.fa.getAddress:hover,
+table.dataTable td button.fa.getPartInfo:hover,
+table.dataTable td button.fa.getPartSubInfo:hover,
+table.dataTable td button.fa.addSubCat1Modal:hover,
+table.dataTable td button.fa.updateSubCat1Modal:hover,
+table.dataTable td button.fa.fa-edit:hover,
+table.dataTable td button.fa.fa-plus-circle:hover,
+.datatable td button.fa.updateUser:hover,
+.datatable td button.fa.updatePayment:hover,
+.datatable td button.fa.updateProduct:hover,
+.datatable td button.fa.getAddress:hover,
+.datatable td button.fa.getPartInfo:hover,
+.datatable td button.fa.getPartSubInfo:hover,
+.datatable td button.fa.addSubCat1Modal:hover,
+.datatable td button.fa.updateSubCat1Modal:hover,
+.datatable td button.fa.fa-edit:hover,
+.datatable td button.fa.fa-plus-circle:hover {
+    color: #ffffff !important;
+    background-color: #d97706 !important;
+    border-color: #d97706 !important;
+}
+
+/* Delete / Disable buttons (normally red) */
+table.dataTable td button.fa.deleteUser,
+table.dataTable td button.fa.deletePayment,
+table.dataTable td button.fa.deleteProduct,
+table.dataTable td button.deleteVendorAdd,
+table.dataTable td button.fa.disablePart,
+table.dataTable td button.fa.disablePartSub,
+table.dataTable td button.fa.disableSubCat,
+table.dataTable td button.fa.disableProdSpec,
+table.dataTable td button.fa.fa-trash-o,
+table.dataTable td button.fa.fa-eye-slash,
+.datatable td button.fa.deleteUser,
+.datatable td button.fa.deletePayment,
+.datatable td button.fa.deleteProduct,
+.datatable td button.deleteVendorAdd,
+.datatable td button.fa.disablePart,
+.datatable td button.fa.disablePartSub,
+.datatable td button.fa.disableSubCat,
+.datatable td button.fa.disableProdSpec,
+.datatable td button.fa.fa-trash-o,
+.datatable td button.fa.fa-eye-slash {
+    color: #ef4444 !important; /* Premium Soft Red */
+    border-color: #fee2e2 !important;
+    background-color: #fef2f2 !important;
+}
+
+table.dataTable td button.fa.deleteUser:hover,
+table.dataTable td button.fa.deletePayment:hover,
+table.dataTable td button.fa.deleteProduct:hover,
+table.dataTable td button.deleteVendorAdd:hover,
+table.dataTable td button.fa.disablePart:hover,
+table.dataTable td button.fa.disablePartSub:hover,
+table.dataTable td button.fa.disableSubCat:hover,
+table.dataTable td button.fa.disableProdSpec:hover,
+table.dataTable td button.fa.fa-trash-o:hover,
+table.dataTable td button.fa.fa-eye-slash:hover,
+.datatable td button.fa.deleteUser:hover,
+.datatable td button.fa.deletePayment:hover,
+.datatable td button.fa.deleteProduct:hover,
+.datatable td button.deleteVendorAdd:hover,
+.datatable td button.fa.disablePart:hover,
+.datatable td button.fa.disablePartSub:hover,
+.datatable td button.fa.disableSubCat:hover,
+.datatable td button.fa.disableProdSpec:hover,
+.datatable td button.fa.fa-trash-o:hover,
+.datatable td button.fa.fa-eye-slash:hover {
+    color: #ffffff !important;
+    background-color: #dc2626 !important;
+    border-color: #dc2626 !important;
+}
+
+/* Info / View / Log buttons (normally blue/gray) */
+table.dataTable td button.fa.proInfo,
+table.dataTable td button.fa.productInfo,
+table.dataTable td button.fa.view-data,
+table.dataTable td button.fa.updatePassword,
+table.dataTable td button.fa.fa-eye,
+table.dataTable td button.fa.fa-info,
+table.dataTable td button.fa.fa-key,
+.datatable td button.fa.proInfo,
+.datatable td button.fa.productInfo,
+.datatable td button.fa.view-data,
+.datatable td button.fa.updatePassword,
+.datatable td button.fa.fa-eye,
+.datatable td button.fa.fa-info,
+.datatable td button.fa.fa-key {
+    color: #0ea5e9 !important; /* Premium Sky Blue */
+    border-color: #e0f2fe !important;
+    background-color: #f0f9ff !important;
+}
+
+table.dataTable td button.fa.proInfo:hover,
+table.dataTable td button.fa.productInfo:hover,
+table.dataTable td button.fa.view-data:hover,
+table.dataTable td button.fa.updatePassword:hover,
+table.dataTable td button.fa.fa-eye:hover,
+table.dataTable td button.fa.fa-info:hover,
+table.dataTable td button.fa.fa-key:hover,
+.datatable td button.fa.proInfo:hover,
+.datatable td button.fa.productInfo:hover,
+.datatable td button.fa.view-data:hover,
+.datatable td button.fa.updatePassword:hover,
+.datatable td button.fa.fa-eye:hover,
+.datatable td button.fa.fa-info:hover,
+.datatable td button.fa.fa-key:hover {
+    color: #ffffff !important;
+    background-color: #0284c7 !important;
+    border-color: #0284c7 !important;
+}
+
+/* Premium Overrides for All Modals */
+.modal-content {
+    border: none !important;
+    border-radius: 16px !important;
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15) !important;
+    overflow: hidden !important;
+}
+.modal-header {
+    background: #ffffff !important;
+    color: #1e293b !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+    padding: 1.25rem 1.5rem !important;
+}
+
+.modal-header .modal-title {
+    font-weight: 700 !important;
+    font-size: 1.15rem !important;
+    letter-spacing: -0.025em !important;
+    color: #1e293b !important;
+}
+
+.modal-header .btn-close {
+    background: none !important;
+    border: none !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    opacity: 0.6 !important;
+    transition: opacity 0.2s ease !important;
+}
+
+.modal-header .btn-close::before {
+    content: "×" !important;
+    font-size: 1.75rem !important;
+    font-weight: 400 !important;
+    color: #1e293b !important;
+    line-height: 1 !important;
+    display: inline-block !important;
+}
+
+.modal-header .btn-close:hover {
+    opacity: 1 !important;
+}
+
+/* Fallback close button styling for older Bootstrap 4 close buttons inside headers */
+.modal-header button.close {
+    color: #1e293b !important;
+    opacity: 0.6 !important;
+    background: transparent !important;
+    border: none !important;
+    font-size: 1.75rem !important;
+    line-height: 1 !important;
+    text-shadow: none !important;
+    transition: opacity 0.2s ease !important;
+    padding: 0 !important;
+}
+
+.modal-header button.close:hover {
+    color: #000000 !important;
+    opacity: 1 !important;
+}
+
+.modal-body {
+    padding: 2rem 1.5rem !important;
+    background-color: #f8fafc !important;
+}
+
+.modal-body .section-title {
+    font-size: 0.85rem !important;
+    font-weight: 700 !important;
+    color: #3b82f6 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    margin-bottom: 1rem !important;
+    border-bottom: 2px solid rgba(59, 130, 246, 0.1) !important;
+    padding-bottom: 0.375rem !important;
+}
+
+.modal-footer {
+    border-top: 1px solid #e2e8f0 !important;
+    padding: 1.15rem 1.5rem !important;
+    background-color: #ffffff !important;
+}
+
+.modal-footer .btn {
+    padding: 0.625rem 1.25rem !important;
+    font-weight: 600 !important;
+    border-radius: 8px !important;
+    transition: all 0.2s ease !important;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #64748b !important;
+    border-color: #64748b !important;
+    color: #ffffff !important;
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: #475569 !important;
+    border-color: #475569 !important;
+}
+
+.modal-footer .btn-success {
+    background-color: #10b981 !important;
+    border-color: #10b981 !important;
+    color: #ffffff !important;
+}
+
+.modal-footer .btn-success:hover {
+    background-color: #059669 !important;
+    border-color: #059669 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25) !important;
+}
+
+.modal-footer .btn-primary {
+    background-color: #3b82f6 !important;
+    border-color: #3b82f6 !important;
+    color: #ffffff !important;
+}
+
+.modal-footer .btn-primary:hover {
+    background-color: #2563eb !important;
+    border-color: #2563eb !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25) !important;
+}
